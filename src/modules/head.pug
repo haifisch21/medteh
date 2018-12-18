@@ -2,7 +2,7 @@ include ../../bemto/bemto.pug
 include ../vars.pug
 
 +b.HEADER.page-header
-    +b.dark
+    +b.wrapper._dark
         +b.container
             +b.row
                 +b.NAV.main-nav
@@ -15,3 +15,28 @@ include ../vars.pug
                         +e.INPUT(type="text" placeholder="Поиск по сайту").area
                     +e.BUTTON(type="button").login Вход
                     +e.BUTTON(type="button").cart Моя корзина
+    +b.wrapper
+        +b.container
+            +b.row
+                +b.contacts
+                    +b.logo
+                        +e.A(href="#").link
+                            +e.IMG(src="/../img/logo.jpg").img
+                    +b.address
+                        +e.P.info Россия, 440018, г. Пенза, ул. Средняя, 9
+                        +e.P.info пн-пт 8:30- 8:00, сб 8:30-16:00, вс выходной
+                        +e.A(href="#").map Как до нас добраться
+                    +b.telephone
+                        +e.P.number +7 (8412) 68-02-11, 68-43-70
+                            +e.SPAN.info Магазин
+                        +e.P.number +7 (8412) 68-38-62
+                            +e.SPAN.info Отдел заказов
+                        +e.P.number +7 (8412) 68-02-11
+                            +e.SPAN.info Ремонт и обслуживание
+                    +b.hire
+                        +e.P.title Мы осуществляем прокат изделий:
+                        +b.weigher
+                            +e.IMG(src="/../img/1117.png").img
+                            +e.P.product Весы для новорожденных
+                                +e.SPAN.hooks (...)
+                            +e.A(href="#").link в прокат »

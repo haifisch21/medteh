@@ -1,14 +1,15 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
-.dark {
-  background-color: $bg-dark-gray;
-}
-
 .container {
   max-width: 1290px;
   margin: 0 auto;
 }
+
+.wrapper_dark {
+  background-color: $bg-dark-gray;
+}
+
 
 .main-nav {
   display: flex;
@@ -34,7 +35,7 @@
   }
 
   &__link {
-    @include font(600, 12px, normal);
+    @include font(12px, 600);
     color: $main-nav-list;
     text-decoration: none;
     padding: 2rem;
@@ -47,7 +48,7 @@
   }
 
   &__login {
-    @include font(600, 12px, normal);
+    @include font(12px, 600);
     flex: 1;
     position: relative;
     padding-left: 2rem;
@@ -74,7 +75,7 @@
   }
 
   &__cart {
-    @include font(600, 12px, normal);
+    @include font(12px, 600);
     flex: 2;
     margin-left: 0;
     position: relative;
@@ -110,6 +111,7 @@
     padding-left: 3rem;
     border-radius: 20px;
     border: 1px solid $dark-gray;
+    outline: none;
   }
 
   &__btn {
@@ -121,5 +123,93 @@
     width: 2rem;
     border: none;
     cursor: pointer;
+    outline: none;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-right: 1.5rem;
+}
+
+.logo {
+  padding-top: 1.5rem;
+}
+
+.address {
+  &__info {
+    @include font(14px, 400);
+    color: $black-font;
+  }
+
+  &__map {
+    @include font(14px, 600);
+    color: $blue-font;
+    border-bottom: 1px solid $blue-font;
+    text-decoration: none;
+  }
+}
+
+.telephone{
+  &__number{
+    @include font(14px, 400);
+    color: $black-font;
+  }
+  &__info{
+    color: $gray-font;
+    margin-left: 1rem;
+  }
+}
+
+.hire{
+  &__title{
+    @include font(14px, 400);
+    color: $gray-font;
+  }
+}
+
+.weigher{
+  display: flex;
+  flex-direction: row;
+  align-content: start;
+
+  &__img{
+    height: 1.7rem;
+  }
+
+  &__product{
+    @include font (12px, 700);
+    width: 13rem;
+    margin-top: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: $blue-font;
+  }
+
+  &__hooks{
+    @include font(12px, 400);
+    color: $gray-font;
+    margin-left: .5rem;
+  }
+
+  &__link{
+    @include font(12px, 600);
+    color: $white;
+    text-decoration:none;
+    padding: 1.2rem 2rem;
+    background-color: $red-button;
+    display: inline;
+    width: 7rem;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+
+  &__link:hover{
+    background-color: $light-red;
+    transition: .2s;
   }
 }
