@@ -1,0 +1,17 @@
+include ../../bemto/bemto.pug
+include ../vars.pug
+
++b.HEADER.page-header
+    +b.dark
+        +b.container
+            +b.row
+                +b.NAV.main-nav
+                    +e.UL.items
+                        each item in navList
+                            +e.LI.item
+                                +e.A(href="#").link=item
+                    +b.FORM.search
+                        +e.BUTTON(type="submit").btn
+                        +e.INPUT(type="text" placeholder="Поиск по сайту").area
+                    +e.BUTTON(type="button").login Вход
+                    +e.BUTTON(type="button").cart Моя корзина
