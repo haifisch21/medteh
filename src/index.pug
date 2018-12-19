@@ -5,10 +5,32 @@ doctype html
 html(lang = "ru")
     head
         meta(charset="utf-8")
-        title МедТех
+        title Мед Техника
         link(rel="stylesheet" href="style.css")
         link(rel="stylesheet" href="head.css")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
     body
         include modules/head.pug
-
+        +b.wrapper
+            +b.container-fluid
+                +b.row
+                    +b.slider
+                        +b.slider-content
+                            +e.IMG(src="../img/slider2.jpg").img
+                            +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+                            +b.slider-nav
+                                +e.LABEL.slider-btn
+                                    +e.INPUT(type="radio" name="radio").switch
+                                    +e.SPAN.radio-custom
+                                +e.LABEL.slider-btn
+                                    +e.INPUT(type="radio" name="radio" checked).switch
+                                    +e.SPAN.radio-custom
+                                +e.LABEL.slider-btn
+                                    +e.INPUT(type="radio" name="radio").switch
+                                    +e.SPAN.radio-custom
+                                +e.LABEL.slider-btn
+                                    +e.INPUT(type="radio" name="radio").switch
+                                    +e.SPAN.radio-custom
+                                +e.LABEL.slider-btn
+                                    +e.INPUT(type="radio" name="radio").switch
+                                    +e.SPAN.radio-custom
