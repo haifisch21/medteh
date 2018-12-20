@@ -104,6 +104,7 @@ body {
 
 .product-list-content{
   margin-left: 3rem;
+  margin-bottom: 8rem;
   &__title{
     @include font(18px, 700, 24px);
     text-decoration: none;
@@ -124,7 +125,7 @@ body {
     @include font (16px, 400, 25px);
     color: $black-font;
     text-decoration: none;
-    width: 16rem;
+    width: 18rem;
     display: block;
   }
 
@@ -150,5 +151,8 @@ body {
   &__more:hover{
     color: $red-button;
     border-bottom: 1px dashed $red-button;
+  }
+  &__item_hidden{
+    display: none;
   }
 }
