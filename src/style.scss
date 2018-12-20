@@ -51,6 +51,7 @@ body {
     border-radius: 3px;
     position: relative;
     margin-right: 10px;
+    cursor: pointer;
   }
 
   &__radio-custom,
@@ -73,5 +74,81 @@ body {
   &__radio-custom,
   &__switch:checked + &__radio-custom::before {
     border-radius: 50%;
+  }
+}
+
+.product {
+  margin-top: 3rem;
+
+  &__title {
+    @include font (14px);
+    text-transform: uppercase;
+    text-align: center;
+    color: $main-nav-list;
+    margin-bottom: 5rem;
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.product-list-content{
+  margin-left: 3rem;
+  &__title{
+    @include font(18px, 700, 24px);
+    text-decoration: none;
+    width: 18rem;
+    display: block;
+    color: $blue-font;
+  }
+  &__title:hover{
+    color:$red-button;
+    transition: .2s;
+  }
+  &__items{
+    margin-top: 2rem;
+    padding-left: 1rem;
+    list-style-image: url("/../img/list.jpg");
+  }
+  &__link{
+    @include font (16px, 400, 25px);
+    color: $black-font;
+    text-decoration: none;
+    width: 16rem;
+    display: block;
+  }
+
+  &__link:hover{
+    color: $blue-font-products;
+    transition: .2s;
+    text-decoration: underline ;
+  }
+
+  &__more{
+    @include font(12px, 600, 12px, italic);
+    color: $blue-font-products;
+    border-bottom: 1px dashed $blue-font-products;
+    text-decoration: none;
+    background: $white;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__more:hover{
+    color: $red-button;
+    border-bottom: 1px dashed $red-button;
   }
 }
