@@ -156,3 +156,22 @@ body {
     display: none;
   }
 }
+.product-button{
+  margin-top: -5rem;
+  &__btn{
+    @include font(16px, 600);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2.7rem 6rem;
+    background: $blue-price-btn-bg;
+    color: $white;
+    display: block;
+  }
+  &__info{
+    @include font(12px);
+    text-align: center;
+    color: $gray-price-info;
+    margin-bottom: 5rem;
+  }
+}
