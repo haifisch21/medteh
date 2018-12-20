@@ -167,3 +167,21 @@ html(lang = "ru")
                             +b.product-button
                                 +e.A(href="#").btn перейти в полный каталог продукции
                                 +e.P.info Еще 9 категорий медицинских товаров.
+        +b.wrapper.interesting-font
+            +b.container
+                +b.interesting
+                    +e.P.title Интересные предложения:
+                    +e.BUTTON(type='button').btn Все новинки
+                    +e.BUTTON(type='button').btn Все хиты продаж
+                    +e.BUTTON(type='button').btn Лучшая цена
+                    +b.interesting-grid
+                        each item in intList
+                            +b.interesting-block
+                                +e.IMG(src="/img/" + item.img).img
+                                +e.P.description=item.description
+                                +e.P.title=item.title
+                                +e.P.subtitle=item.subtitle
+                                +b.price-block
+                                    +e.P.oldPrice=item.oldPrice
+                                    +e.P.price=item.price
+                                +e.BUTTON(type='button').btn=item.btn
