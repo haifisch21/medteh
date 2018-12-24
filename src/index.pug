@@ -8,6 +8,7 @@ html(lang = "ru")
         title Мед Техника
         link(rel="stylesheet" href="style.css")
         link(rel="stylesheet" href="head.css")
+        link(rel="stylesheet" href="foot.css")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
     body
         include modules/head.pug
@@ -175,13 +176,41 @@ html(lang = "ru")
                     +e.BUTTON(type='button').btn Все хиты продаж
                     +e.BUTTON(type='button').btn Лучшая цена
                     +b.interesting-grid
-                        each item in intList
-                            +b.interesting-block
-                                +e.IMG(src="/img/" + item.img).img
-                                +e.P.description=item.description
-                                +e.P.title=item.title
-                                +e.P.subtitle=item.subtitle
-                                +b.price-block
-                                    +e.P.oldPrice=item.oldPrice
-                                    +e.P.price=item.price
-                                +e.BUTTON(type='button').btn=item.btn
+                            +b.interesting-block._new
+                                +e.IMG(src="/img/1281_mid.jpg").img
+                                +e.P.description Физиотерапевтические аппараты
+                                +e.P.title Электроды для дарсонвализации
+                                +e.P.subtitle Для аппаратов «Корона», «Карат», «Ультратек»
+                                +e.P.price 1 500 Р
+                                +e.BUTTON(type='button').btn купить »
+
+                            +b.interesting-block._best-price
+                                +e.IMG(src="/img/1282_mid.jpg").img
+                                +e.P.description Тонометры Автоматические
+                                +e.P.title Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+                                +e.P.subtitle Для пенсионеров скидки!!!
+                                +e.P.old-price 3 870 Р
+                                +e.P.price._indent 3 870 Р
+                                +e.BUTTON(type='button').btn купить »
+
+                            +b.interesting-block._new
+                                +e.IMG(src="/img/1283_mid.jpg").img
+                                +e.P.description Физиотерапевтические аппараты
+                                +e.P.title Концентратор кислородный 7F-1L
+                                +e.P.subtitle Для сеансов профилактической кислородотерапии, приготовления кислородных коктейлей
+                                +e.P.price 1 500 Р
+                                +e.BUTTON(type='button').btn купить »
+
+                            +b.interesting-block._hit-sales
+                                +e.IMG(src="/img/1282_mid.jpg").img
+                                +e.P.description Тонометры Автоматические
+                                +e.P.title Тонометр автоматический с функцией диагностики аритмии Microlife BP A100
+                                +e.P.subtitle Для пенсионеров скидки!!!
+                                +e.P.price цена не указана
+                                +e.BUTTON(type='button').btn купить »
+        +b.wrapper
+            +b.container
+                +b.info-block
+                    +e.P.title Медицинская техника в Пензе и Пензенской области
+                    +e.P.subtitle ЗАО «Медтехника» осуществляет свою деятельность с 1965 года. В течение четырех десятилетий мы обеспечиваем бесперебойное функционирование и обновление парка медицинской техники в лечебно-профилактических учреждениях города и области. В настоящее время ЗАО «Медтехника» представляет собой современное предприятие, обеспечивающее лечебно-профилактические учреждения медицинской техникой, расходными материалами, предоставляющее полный спектр услуг, обеспечивающих бесперебойную и безопасную эксплуатацию медицинской техники. Высококвалифицированные специалисты, технологическое и инструментальное оснащение производства, развитая инфраструктура – все это позволяет выполнять работы на высоком техническом уровне. ЗАО «Медтехника» оказывает услуги населению г. Пензы и Пензенской области, участвует в национальном проекте «Здоровье» и программах модернизации здравоохранения.
+        include modules/foot.pug

@@ -1,0 +1,110 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.wrapper_footer{
+  background-color: $footer-bg;
+}
+
+.footer-contacts{
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo{
+  flex: 2;
+}
+.footer-address{
+  flex: 3;
+  text-align: left;
+  margin-top: 0.5rem;
+
+  &__info{
+    @include font(12px);
+    color: $footer-light-font;
+  }
+}
+.footer-telephone{
+  flex: 2;
+  text-align: left;
+  margin-top: 0.4rem;
+  &__tel{
+    @include font(12px);
+    color: $footer-light-font;
+  }
+}
+.footer-search{
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -4rem;
+
+  &__info{
+    @include font(10px);
+    color: $footer-dark-font;
+    margin-right: 1rem;
+  }
+}
+
+.footer-search-block{
+  &__area{
+    border:none;
+    background-color: $footer-search-bg;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 1rem;
+    color: $footer-light-font;
+    height: 2rem;
+  }
+
+  &__btn{
+    @include font(9px, 600);
+    padding: .8rem 1.5rem;
+    color: $footer-light-font;
+    background-color: $footer-search-button-bg;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+
+.footer-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-code{
+  flex: 10;
+
+  &__codex{
+    @include font(12px);
+    color: $footer-dark-font;
+    width: 62rem;
+    margin-top: 4rem;
+    margin-bottom: 5.5rem;
+  }
+}
+
+.footer-onlinebees{
+  flex:2;
+  margin-top: 2rem;
+
+  &__link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    min-width: 15rem;
+    max-width: 15rem;
+  }
+
+  &__info{
+    @include font(12px);
+    color: $footer-dark-font;
+    margin-right: 1rem;
+  }
+}

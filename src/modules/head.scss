@@ -151,6 +151,12 @@
     border-bottom: 1px solid $blue-font;
     text-decoration: none;
   }
+
+  &__map:hover{
+    color: $light-red;
+    border-bottom: 1px solid $light-red;
+    transition: .2s;
+  }
 }
 
 .telephone{
