@@ -150,6 +150,7 @@ body {
     border-top: none;
     text-align: left;
     cursor: pointer;
+    outline: none;
   }
 
   &__more:hover {
@@ -212,6 +213,7 @@ body {
     position: relative;
     text-align: center;
     padding-bottom: 2rem;
+    outline: none;
   }
 
   &__btn:hover {
