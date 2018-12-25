@@ -1,5 +1,5 @@
 .wrapper_footer{
-  background-color: $footer-bg;
+  background-color: $color-eclipse;
 }
 
 .footer-contacts{
@@ -18,7 +18,7 @@
 
   &__info{
     @include font(12px);
-    color: $footer-light-font;
+    color: $color-more-light-gray;
   }
 }
 .footer-telephone{
@@ -27,7 +27,7 @@
   margin-top: 0.4rem;
   &__tel{
     @include font(12px);
-    color: $footer-light-font;
+    color: $color-more-light-gray;
   }
 }
 .footer-search{
@@ -40,7 +40,7 @@
 
   &__info{
     @include font(10px);
-    color: $footer-dark-font;
+    color: $color-suva-gray;
     margin-right: 1rem;
   }
 }
@@ -48,11 +48,11 @@
 .footer-search-block{
   &__area{
     border:none;
-    background-color: $footer-search-bg;
+    background-color: $color-suva-dark-gray;
     border-radius: 3px;
     outline: none;
     margin-right: 1rem;
-    color: $footer-light-font;
+    color: $color-more-light-gray;
     height: 2rem;
     padding-left: .5rem;
   }
@@ -60,8 +60,8 @@
   &__btn{
     @include font(9px, 600);
     padding: .8rem 1.5rem;
-    color: $footer-light-font;
-    background-color: $footer-search-button-bg;
+    color: $color-more-light-gray;
+    background-color: $color-rambezi-gray;
     border: none;
     outline: none;
     cursor: pointer;
@@ -79,7 +79,7 @@
 
   &__codex{
     @include font(12px);
-    color: $footer-dark-font;
+    color: $color-suva-gray;
     width: 62rem;
     margin-top: 4rem;
     margin-bottom: 5.5rem;
@@ -102,7 +102,7 @@
 
   &__info{
     @include font(12px);
-    color: $footer-dark-font;
+    color: $color-suva-gray;
     margin-right: 1rem;
   }
 }
