@@ -4,4 +4,4 @@
 *.html
 *.css
 *.config
-
+/node_modules/
