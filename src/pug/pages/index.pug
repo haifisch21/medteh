@@ -8,34 +8,34 @@ html(lang = "ru")
         title Мед Техника
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css")
         link(rel="stylesheet" href="../node_modules/normalize.css/normalize.css")
-        meta(name="viewport" content="width=device-width, initial-scale = 1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
     body
 
         include ../components/head
         +b.wrapper
             +b.container-fluid
                 +b.row
-                    +b.slider
-                        +b.slider-content
-                            +e.IMG(src="/src/assets/img/slider2.jpg").img
-                            +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-                            +b.slider-nav
-                                +e.LABEL.slider-btn
-                                    +e.INPUT(type="radio" name="radio").switch
-                                    +e.SPAN.radio-custom
-                                +e.LABEL.slider-btn
-                                    +e.INPUT(type="radio" name="radio" checked).switch
-                                    +e.SPAN.radio-custom
-                                +e.LABEL.slider-btn
-                                    +e.INPUT(type="radio" name="radio").switch
-                                    +e.SPAN.radio-custom
-                                +e.LABEL.slider-btn
-                                    +e.INPUT(type="radio" name="radio").switch
-                                    +e.SPAN.radio-custom
-                                +e.LABEL.slider-btn
-                                    +e.INPUT(type="radio" name="radio").switch
-                                    +e.SPAN.radio-custom
+                    +b.swiper-container
+                        +b.swiper-wrapper
+                            +b.swiper-slide
+                                +e.IMG(src="/src/assets/img/slider1.jpg").img
+                                +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+                            +b.swiper-slide
+                                +e.IMG(src="/src/assets/img/slider2.jpg").img
+                                +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+                            +b.swiper-slide
+                                +e.IMG(src="/src/assets/img/slider1.jpg").img
+                                +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+                            +b.swiper-slide
+                                +e.IMG(src="/src/assets/img/slider2.jpg").img
+                                +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+                            +b.swiper-slide
+                                +e.IMG(src="/src/assets/img/slider1.jpg").img
+                                +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
+                        +b.swiper-pagination
+
             +b.container
                     +b.product
                         +e.P.title ассортимент нашей продукции
@@ -216,3 +216,5 @@ html(lang = "ru")
                     +e.P.title Медицинская техника в Пензе и Пензенской области
                     +e.P.subtitle ЗАО «Медтехника» осуществляет свою деятельность с 1965 года. В течение четырех десятилетий мы обеспечиваем бесперебойное функционирование и обновление парка медицинской техники в лечебно-профилактических учреждениях города и области. В настоящее время ЗАО «Медтехника» представляет собой современное предприятие, обеспечивающее лечебно-профилактические учреждения медицинской техникой, расходными материалами, предоставляющее полный спектр услуг, обеспечивающих бесперебойную и безопасную эксплуатацию медицинской техники. Высококвалифицированные специалисты, технологическое и инструментальное оснащение производства, развитая инфраструктура – все это позволяет выполнять работы на высоком техническом уровне. ЗАО «Медтехника» оказывает услуги населению г. Пензы и Пензенской области, участвует в национальном проекте «Здоровье» и программах модернизации здравоохранения.
         include ../components/foot
+    script(src="../node_modules/swiper/dist/js/swiper.min.js")
+    script(src="main.js")
