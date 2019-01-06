@@ -1,6 +1,8 @@
-@import "variables";            // Переменные
-@import "mixins";               // Миксины
-@import "fonts";                // Шрифты
-@import "head";                 // Стили хэдера
-@import "foot";                 // Стили футера
-
+@import "variables";           // Переменные
+@import "mixins";              // Миксины
+@import "fonts";               // Шрифты
+@import "head";                // Стили хэдера
+@import "foot";                // Стили футера
+@import "main";                // Главная
+@import "reset";               // Отступы
+@import "grid";                // Сетка
