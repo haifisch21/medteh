@@ -190,6 +190,61 @@
     height: 20rem;
   }
 
+  &__btn {
+    @include font(12px, 600);
+    color: $color-white;
+    background: $color-soft-red-light;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-bottom: 3.7rem;
+
+    &__:hover {
+      background-color: $color-soft-red;
+      transition: .2s;
+    }
+  }
+
+  &__new {
+    @include font(10px, 600);
+    position: absolute;
+    left: 0;
+    top: 31.8%;
+    color: $color-white;
+    background: $color-moderate-green;
+    height: 2.7rem;
+    width: 6.6rem;
+    line-height: 2.7;
+  }
+
+  &__best-price{
+    @include font(10px, 600);
+    color: $color-white;
+    background: $color-bright-orange;
+    line-height: 2.7;
+    height: 2.7rem;
+    width: 8.8rem;
+    position: absolute;
+    left: 0;
+    top: 31.8%;
+  }
+
+  &__hit-sales{
+    @include font(10px, 600);
+    color: $color-white;
+    background: $color-soft-violet;
+    width: 7.7rem;
+    line-height: 2.7;
+    height: 2.7rem;
+    position: absolute;
+    left: 0;
+    top: 31.8%;
+  }
+}
+.description-block{
+  height: 15rem;
   &__description {
     @include font(10px);
     color: $color-more-dark-gray;
@@ -209,84 +264,26 @@
     width: 23rem;
     margin: 0 auto;
     padding-top: 2rem;
-    padding-bottom: 15rem;
   }
+}
 
-  &__btn {
-    @include font(12px, 600);
-    color: $color-white;
-    background: $color-soft-red-light;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-    top: 87%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    &__:hover {
-      background-color: $color-soft-red;
-      transition: .2s;
-    }
-  }
+.pricing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 
   &__price {
     @include font(18px, 600);
     color: $color-mostly-black;
-    position: absolute;
-    left: 50%;
-    top:75%;
-    transform: translateX(-50%);
-    width: 15rem;
   }
 
   &__old-price{
     @include font(12px, 600);
     color: $color-bright-orange;
-    position: absolute;
-    left: 20%;
-    top: 75%;
     text-decoration: line-through;
-  }
-
-  &_new:after {
-    @include font(10px, 600);
-    position: absolute;
-    left: 0;
-    top: 35.6%;
-    color: $color-white;
-    background: $color-moderate-green;
-    height: 2.7rem;
-    width: 6.6rem;
-    line-height: 2.7;
-    content: "новинка";
-  }
-
-  &_best-price:after{
-    @include font(10px, 600);
-    content: "лучшая цена";
-    color: $color-white;
-    background: $color-bright-orange;
-    line-height: 2.7;
-    height: 2.7rem;
-    width: 8.8rem;
-    position: absolute;
-    left: 0;
-    top: 35.5%;
-  }
-
-  &_hit-sales:after{
-    @include font(10px, 600);
-    content: "хит продаж";
-    color: $color-white;
-    background: $color-soft-violet;
-    width: 7.7rem;
-    line-height: 2.7;
-    height: 2.7rem;
-    position: absolute;
-    left: 0;
-    top: 35.5%;
+    margin-right: 1.5rem;
   }
 }
 
