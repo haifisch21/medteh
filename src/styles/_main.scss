@@ -200,6 +200,10 @@
     cursor: pointer;
     margin-top: 3rem;
     margin-bottom: 3.7rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 
     &__:hover {
       background-color: $color-soft-red;
@@ -284,21 +288,5 @@
     color: $color-bright-orange;
     text-decoration: line-through;
     margin-right: 1.5rem;
-  }
-}
-
-.info-block{
-  margin-bottom: 5.5rem;
-  &__title{
-    @include font(36px);
-    color: $color-mostly-black-dark;
-    text-align: center;
-  }
-
-  &__subtitle{
-    @include font(16px, 400, 24px);
-    color: $color-mostly-black;
-    text-align: center;
-    width: 120rem;
   }
 }
