@@ -200,16 +200,14 @@
     cursor: pointer;
     margin-top: 3rem;
     margin-bottom: 3.7rem;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
 
-    &__:hover {
+    &:hover {
       background-color: $color-soft-red;
       transition: .2s;
     }
   }
+
+
 
   &__new {
     @include font(10px, 600);
