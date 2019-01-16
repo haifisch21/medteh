@@ -1,59 +1,51 @@
 include ../bemto/bemto.pug
-include ../components/vars
+include ../components/_vars
+include ../components/_mixin
 
-doctype html
-html(lang = "ru")
-    head
-        meta(charset="utf-8")
-        title Мед Техника
-        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
-        link(rel="stylesheet" href="../node_modules/normalize.css/normalize.css")
-        link(rel="stylesheet" href="css/style.css")
-    body
-        include ../components/head
-        +b.wrapper
-            +b.container
-                +b.row
-                    +b.way
-                        +e.A(href='/build/index.html').link._main Главная
-                        +e.A(href='#').link._catalog Каталог
-                +b.row
-                    +b.contents
-                        +e.H2.title Каталог
-        +b.wrapper
-            +b.container
-                +b.row.catalog-grid
-                    +b.side-bar
-                        include ../components/catalog_side_bar
-                    +b.content
-                        +b.top-info
-                            +b.show-product
-                                +e.P.info Показано товаров:  2 010
-                            include ../components/sorting
-                        +b.wrapper
-                            +b.container
-                                +b.row
-                                    +b.catalog-product-grid
-                                        each item in catalogListFirst
-                                            +b.catalog-block
-                                                +e.IMG(src="/src/assets/img/" + item.img).img
-                                                +b.description-block
-                                                    +e.P.description=item.description
-                                                    +e.P.title=item.title
-                                                    +e.P.subtitle=item.subtitle
-                                                +b.pricing
-                                                    if item.oldPrice
-                                                        +e.P.old-price=item.oldPrice
-                                                        +e.P.price=item.price
-                                                    else
-                                                        +e.P.price=item.price
-                                                +e.BUTTON(type='button').btns=item.button
-                                                if item.new
-                                                    +e.P.new=item.new
-                                                else if item.bestPrice
-                                                    +e.P.best-price=item.bestPrice
-                                                else if item.hitSales
-                                                    +e.P.hit-sales=item.hitSales
-                        include ../components/catalog_pages_button
-        include ../components/medical_equipment
-        include ../components/foot
++base-page
+    +b.wrapper
+        +b.container
+            +b.row
+                +b.way
+                    +e.A(href='/build/index.html').link._main Главная
+                    +e.A(href='#').link._catalog Каталог
+            +b.row
+                +b.contents
+                    +e.H2.title Каталог
+    +b.wrapper
+        +b.container
+            +b.row.catalog-grid
+                +b.side-bar
+                    include ../components/_catalog_side_bar
+                +b.content
+                    +b.top-info
+                        +b.show-product
+                            +e.P.info Показано товаров:  2 010
+                        include ../components/_sorting
+                    +b.wrapper
+                        +b.container
+                            +b.row
+                                +b.catalog-product-grid
+                                    each item in catalogListFirst
+                                        +b.catalog-block
+                                            +e.IMG(src="/src/assets/img/" + item.img).img
+                                            +b.description-block
+                                                +e.P.description=item.description
+                                                +e.P.title
+                                                    +e.A(href=" " + item.link).link=item.title
+                                                +e.P.subtitle=item.subtitle
+                                            +b.pricing
+                                                if item.oldPrice
+                                                    +e.P.old-price=item.oldPrice
+                                                    +e.P.price=item.price
+                                                else
+                                                    +e.P.price=item.price
+                                            +e.BUTTON(type='button').btns=item.button
+                                            if item.new
+                                                +e.P.new=item.new
+                                            else if item.bestPrice
+                                                +e.P.best-price=item.bestPrice
+                                            else if item.hitSales
+                                                +e.P.hit-sales=item.hitSales
+                    include ../components/_catalog_pages_button
+    include ../components/_medical_equipment

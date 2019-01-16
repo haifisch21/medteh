@@ -21,6 +21,8 @@
   &__title {
     @include font(30px, 300);
     color: $color-mostly-black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -29,11 +31,11 @@
 }
 
 .side-bar {
-  flex: 3;
+  flex-grow: 3;
 }
 
 .content{
-  flex: 9;
+  flex-grow: 9;
 }
 
 .top-info {
@@ -79,7 +81,7 @@
     cursor: pointer;
     display: flex;margin: 3rem auto 3.7rem;
 
-    &__:hover {
+    &:hover {
       background-color: $color-soft-red;
       transition: .2s;
     }
@@ -89,7 +91,7 @@
     @include font(10px, 600);
     position: absolute;
     left: 0;
-    top: 31.8%;
+    top: 34.6%;
     color: $color-white;
     background: $color-moderate-green;
     height: 2.7rem;
@@ -108,7 +110,7 @@
     width: 8.8rem;
     position: absolute;
     left: 0;
-    top: 31.8%;
+    top: 34.6%;
   }
 
   &__hit-sales{
@@ -121,7 +123,7 @@
     height: 2.7rem;
     position: absolute;
     left: 0;
-    top: 31.8%;
+    top: 34.6%;
   }
 }
 
@@ -133,13 +135,20 @@
     text-align: center;
   }
 
-  &__title {
+  &__link {
     @include font(18px, 700);
     width: 25rem;
     text-align: center;
     color: $color-strong-blue;
     margin: 0 auto;
+    text-decoration: none;
+
+    &:hover{
+      color: $color-soft-red;
+      transition: .2s;
+    }
   }
+
 
   &__subtitle {
     @include font(14px);
@@ -148,30 +157,5 @@
     margin: 0 auto;
     padding-top: 2rem;
     text-align: center;
-  }
-}
-
-.pricing{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-
-  &__price {
-    @include font(18px, 600);
-    color: $color-mostly-black;
-  }
-
-  &__old-price{
-    @include font(12px, 600);
-    color: $color-bright-orange;
-    text-decoration: line-through;
-    margin-right: 1.5rem;
-  }
-
-  &__dotted{
-    display: block;
-    background: red;
   }
 }

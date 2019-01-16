@@ -1,39 +1,17 @@
 include ../bemto/bemto.pug
-include ../components/vars
+include ../components/_vars
+include ../components/_mixin
 
-doctype html
-html(lang = "ru")
-    head
-        meta(charset="utf-8")
-        title Мед Техника
-        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
-        link(rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css")
-        link(rel="stylesheet" href="../node_modules/normalize.css/normalize.css")
-        link(rel="stylesheet" href="/build/css/style.css")
-    body
-
-        include ../components/head
-
++base-page
+    +b.SECTION.main
         .swiper-container
-            .swiper-wrapper
-                +b.swiper-slide
-                    +e.IMG(src="/src/assets/img/slider1.jpg").img
-                    +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-                +b.swiper-slide
-                    +e.IMG(src="/src/assets/img/slider2.jpg").img
-                    +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-                +b.swiper-slide
-                    +e.IMG(src="/src/assets/img/slider1.jpg").img
-                    +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-                +b.swiper-slide
-                    +e.IMG(src="/src/assets/img/slider2.jpg").img
-                    +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-                +b.swiper-slide
-                    +e.IMG(src="/src/assets/img/slider1.jpg").img
-                    +e.P.text Уже 50 лет мы обеспечиваем бесперебойную работу медицинской техники
-            .swiper-pagination
-
-        +b.container
+            +b.swiper-wrapper
+                each item in listSliderProduct
+                    +b.swiper-slide
+                        +e.IMG(src="/src/assets/img/" + item.swiperSliderImg).img
+                        +e.P.text=item.swiperSliderText
+            +b.swiper-pagination
+        .container
             +b.product
                 +e.P.title ассортимент нашей продукции
                 +b.row.product-grid
@@ -167,7 +145,7 @@ html(lang = "ru")
                     +b.product-button
                         +e.A(href="/build/catalog.html").btn перейти в полный каталог продукции
                         +e.P.info Еще 9 категорий медицинских товаров.
-    +b.wrapper.interesting-font
+    .wrapper.interesting-font
         +b.container
             +b.interesting
                 +e.H2.title Интересные предложения:
@@ -180,7 +158,8 @@ html(lang = "ru")
                             +e.IMG(src="/src/assets/img/" + item.img).img
                             +b.description-block
                                 +e.P.description=item.description
-                                +e.P.title=item.title
+                                +e.P.title
+                                    +e.A(href=" " + item.link).link=item.title
                                 +e.P.subtitle=item.subtitle
                             +b.pricing
                                 if item.oldPrice
@@ -195,9 +174,5 @@ html(lang = "ru")
                                 +e.P.best-price=item.bestPrice
                             else if item.hitSales
                                 +e.P.hit-sales=item.hitSales
-                        
-    include ../components/medical_equipment
-    include ../components/foot
 
-    script(src="../node_modules/swiper/dist/js/swiper.min.js")
-    script(src="js/main.js")
+    include ../components/_medical_equipment

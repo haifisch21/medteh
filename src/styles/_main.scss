@@ -133,6 +133,7 @@
     text-align: center;
     color: $color-dark-gray;
     margin-bottom: 5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -150,6 +151,7 @@
     @include font(36px);
     color: $color-mostly-black-dark;
     text-align: center;
+    padding-top: 4rem;
   }
 
   &__btn {
@@ -163,6 +165,8 @@
     text-align: center;
     padding-bottom: 2rem;
     outline: none;
+    padding-top: 3rem;
+    width: 15rem;
   }
 
   &__btn:hover {
@@ -175,6 +179,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 4rem;
 }
 
 .interesting-block {
@@ -213,7 +218,7 @@
     @include font(10px, 600);
     position: absolute;
     left: 0;
-    top: 31.8%;
+    top: 34.6%;
     color: $color-white;
     background: $color-moderate-green;
     height: 2.7rem;
@@ -230,7 +235,7 @@
     width: 8.8rem;
     position: absolute;
     left: 0;
-    top: 31.8%;
+    top: 34.6%;
   }
 
   &__hit-sales{
@@ -242,7 +247,7 @@
     height: 2.7rem;
     position: absolute;
     left: 0;
-    top: 31.8%;
+    top: 34.6%;
   }
 }
 .description-block{
@@ -258,6 +263,7 @@
     text-align: center;
     color: $color-strong-blue;
     margin: 0 auto;
+    padding-top: 2rem;
   }
 
   &__subtitle {
@@ -275,6 +281,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  padding-top: 3rem;
 
   &__price {
     @include font(18px, 600);
