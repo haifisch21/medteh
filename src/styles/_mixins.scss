@@ -11,3 +11,9 @@
     font: $font-weight $font-style #{$font-size} / #{$line-height} $font-family;
   }
 }
+
+@mixin span($column){
+  max-width: calc ($column * $column-width);
+  margin-left: 30px;
+  margin-right: 30px;
+}
