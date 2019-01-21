@@ -1,3 +1,14 @@
 .text{
   @include span(6);
 }
+
+.item{
+  @include span(12);
+  border: 1px solid #000;
+  @media (min-width: 768px) {
+    @include span(6);
+  }
+  @media (min-width: 1200px) {
+    @include span(4);
+  }
+}

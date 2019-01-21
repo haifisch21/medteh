@@ -1,11 +1,17 @@
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: $gutter;
+  padding-left: $gutter;
   margin-right: auto;
   margin-left: auto;
 }
 
 .row {
-  margin-left: -.9375rem;
-  margin-right: -.9375rem;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+
+  &_flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
