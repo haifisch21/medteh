@@ -36,6 +36,7 @@
       color: $color-white;
       font-size: 24px;
       margin-top: 0.5rem;
+      padding-left: 1rem;
     }
 
     &:last-child::after{
@@ -43,6 +44,7 @@
       color: $color-white;
       font-size: 24px;
       margin-top: 0.5rem;
+      padding-right: 1rem;
     }
 
     &:first-child{
@@ -70,6 +72,7 @@
 
   &__dotted{
     padding: 1rem;
+    height: 3rem;
   }
 
   &__link{
@@ -81,7 +84,7 @@
     background-color: #e8f5f9;
     display: block;
     text-align: center;
-    width: 2rem;
+    width: 4rem;
     border: 1px solid #a4d4ec;
     border-radius: 3px;
   }

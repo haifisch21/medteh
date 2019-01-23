@@ -1,0 +1,12 @@
+.img-block {
+  &__best-sails {
+    @include font(11.25px);
+    position: absolute;
+    left: 0;
+    bottom: 2.6rem;
+    padding: 1rem 1.5rem;
+    background: $color-bright-orange;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+}

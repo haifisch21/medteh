@@ -29,6 +29,7 @@ $color-blue-krayola: #a4d4ec;
 $color-deep-yellow-pink: #f04343;
 $color-light-silver: #b0b0b0;
 $color-silver: #c4c4c4;
+$color-gainsbro: #e3e3e3;
 
 
 //Шрифты
@@ -37,3 +38,10 @@ $font: 'Open Sans';
 // Сетка
 $column-width: 6.5rem;
 $gutter: 15px;
+
+// breakpoints
+$xsm:320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xlg: 1200px;
