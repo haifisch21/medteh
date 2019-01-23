@@ -115,24 +115,22 @@
   margin-top: 3rem;
 
   &__title{
-    @include font(30px);
-    color: $color-mostly-black-dark;
-    margin-bottom: .5rem;
+    @include title;
   }
 
   &__info{
     @include font(16px);
     color: $color-mostly-black-dark;
     margin-top: 2rem;
+    line-height: 1.5;
   }
 }
 
 .specifications{
   margin-top: 4rem;
-  margin-bottom: 1rem;
   &__title{
-    @include font(30px);
-    margin-bottom: 2.8rem;
+    @include title;
+    margin-bottom: 2rem;
   }
 }
 
@@ -185,7 +183,102 @@
       background-color: $color-gray;
     }
   }
-  
 }
+
+.benefits{
+  margin-top: 3rem;
+  &__title {
+    @include title;
+    margin-bottom: 2rem;
+  }
+
+  &__lists{
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list:before{
+    @include font(14px, 800);
+    content: ">";
+    color: $color-strong-cyan-dark;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+
+  &__list{
+    @include font(16px);
+    color: $color-mostly-black;
+    padding-bottom: 2.4rem;
+
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+
+.completeness{
+  margin-top: 3rem;
+  &__title{
+    @include title;
+    margin-bottom: 2rem;
+  }
+
+  &__lists{
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__number{
+    @include font(14px, 800);
+    color: $color-strong-cyan-dark;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+
+  &__list {
+    @include font(16px);
+    color: $color-mostly-black;
+    padding-bottom: 2.4rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__indent{
+    padding-left: 1.8rem;
+  }
+}
+
+.additionally{
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  &__title{
+    @include title;
+    margin-bottom: 3rem;
+  }
+
+  &__description{
+    @include font(16px);
+    margin-bottom: 2rem;
+  }
+  &__link{
+    margin-bottom: .7rem;
+  }
+  &__download{
+    @include font(16px, 700);
+    text-transform: none;
+    color: $color-strong-blue;
+    text-decoration: none;
+    margin-top: 2rem;
+    border-bottom: 1px solid $color-strong-blue;
+  }
+}
+
 
 
