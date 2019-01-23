@@ -17,17 +17,3 @@
   margin-left: $gutter;
   margin-right: $gutter;
 }
-
-@mixin product-gallery-img{
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(227, 227, 227);
-  background-color: rgb(255, 255, 255);
-  box-shadow: 1.5px 2.598px 9px 0px rgba(0, 0, 0, 0.09);
-}
-
-@mixin title{
-  @include font(30px);
-  color: $color-mostly-black-dark;
-  margin-bottom: .5rem;
-}

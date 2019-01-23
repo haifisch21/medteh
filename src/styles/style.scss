@@ -1,17 +1,5 @@
 @import "variables";           // Переменные
 @import "mixins";              // Миксины
 @import "fonts";               // Шрифты
-@import "head";                // Стили хэдера
-@import "foot";                // Стили футера
-@import "main";                // Главная
 @import "reset";               // Отступы
 @import "grid";                // Сетка
-@import "catalog";             // Стили каталога
-@import "catalog_side_bar";    // Стили компонента side-bar
-@import "medical_equipment";   // Стили компонента "Медецинская техника в Пензе..."
-@import "sorting";             // Стили окна стортировки
-@import "pagination";          // Стили кнопок переключения страниц в каталоге
-@import "tonometr-page";       // Стили страницы тонометра
-@import "button_back";         // Стили кнопки "назад"
-@import "gallery_hit_sails";   // Стили галереи "Хит продаж"
-@import "button_by";           // Стили кнопки "Купить"
