@@ -1,0 +1,105 @@
+.catalog-block-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10rem;
+
+  &__lists{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list{
+    display: inline-block;
+  }
+
+  &__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-bright-blue-light;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+    &:first-child::before{
+      content: "\2190";
+      color: $color-white;
+      font-size: 24px;
+      margin-top: 0.5rem;
+    }
+
+    &:last-child::after{
+      content: '\2192';
+      color: $color-white;
+      font-size: 24px;
+      margin-top: 0.5rem;
+    }
+
+    &:first-child{
+      margin-right: 2rem;
+    }
+
+    &:last-child{
+      margin-left: 2rem;
+    }
+  }
+
+  &__info{
+    @include font(14px);
+    color: $color-white;
+    margin: 0;
+  }
+
+  &__info:first-child{
+    padding-left: 4rem;
+  }
+
+  &__info:last-child{
+    padding-right: 4rem;
+  }
+
+  &__dotted{
+    padding: 1rem;
+  }
+
+  &__link{
+    @include font(14px);
+    color: #273941;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #e8f5f9;
+    display: block;
+    text-align: center;
+    width: 2rem;
+    border: 1px solid #a4d4ec;
+    border-radius: 3px;
+  }
+
+  &__link_active{
+    border: 1px solid transparent;
+    background-color: $color-bright-blue-light;
+    color: $color-white;
+  }
+
+  &__link:hover{
+    background-color: $color-soft-red-light;
+    border: 1px solid transparent;
+    color: $color-white;
+  }
+
+  &__btn_disactive{
+    background-color: $color-very-light-gray;
+    cursor: auto;
+  }
+}
