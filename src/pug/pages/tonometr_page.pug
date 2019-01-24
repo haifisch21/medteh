@@ -1,0 +1,71 @@
+include ../bemto/bemto.pug
+include ../components/_vars
+include ../components/_mixin
+
+
++base-page
+    +b.wrapper
+        +b.container
+            +b.row.row_flex
+                +b.way
+                    +e.A(href='/build/index.html').link._pages Главная
+                    +e.A(href='/build/catalog.html').link._pages Каталог
+                    +e.A(href='#').link._pages Товары для дома
+                    +e.A(href='#').link._pages Тонометры
+                    +e.A(href='#').link._product Тонометры автоматические
+            include ../components/_button_back
+            +b.row.row_flex
+                +b.gallery-wrapper
+                    +b.product-gallery
+                        +b.gallery-wrap
+                            +b.img-block
+                                +e.IMG(src="/src/assets/img/tonometr_main.jpg").img._main
+                                include ../components/_gallery_hit_sails
+                            +b.img-mini-wrap
+                                +b.img-wrap
+                                    +e.IMG(src="/src/assets/img/tonometr_gallery_1.jpg").img
+                                +b.img-wrap
+                                    +e.IMG(src="/src/assets/img/tonometr_gallery_2.jpg").img
+                    +b.product-discruption
+                        +e.P.title Автоматический тонометр для людей с пониженным зрением B.Well WA-77 «Talking»
+                        +e.P.subcategory Подкатегория:
+                            +e.SPAN.subcategory._colored Тонометры Автоматические
+                        +e.P.info ДАННЫЙ ТОВАР ИМЕЕТ СЕРТИФИКАТ СООТВЕТСТВИЯ И РЕГИСТРАЦИОННОЕ УДОСТОВЕРЕНИЕ
+                        +b.pricing._product
+                            +e.P.old-price._product 3870 &#8381;
+                            +e.price._product 3870 &#8381;
+                        include ../components/_button_by
+            +b.row.row_flex
+                +b.product-info
+                    +e.P.title Описание товара
+                    +e.P.info Микроскоп предназначен для наблюдения и морфологических исследований препаратов в проходящем свете по методу светлого поля. МИКРОМЕД Р-1 может быть использован при учебных и лабораторных работах в различных областях медицины для решения широкого круга задач, в ветеринарии. На микроскопе можно изучать окрашенные и неокрашенные биологические объекты в виде мазков и срезов.
+                    +e.P.info МИКРОМЕД Р-1 обеспечивает возможность вывода изображения в режиме реального времени на экран ПК с помощью видеоокуляра (в комплект не входит) для количественного анализа структур исследуемых объектов.
+                    +e.P.info Сочетая в себе ахроматическую оптику и низкую цену, микроскоп МИКРОМЕД Р-1 незаменим как для целей обучения в высших медицинских и биологических учреждениях, так и для несложной рутинной работы в лаборатории. Широко используется в ветеринарии.
+                    +e.P.info Микроскоп рассчитан на длину тубуса 160 мм, объективы стандарта RMS, парфокальная высота объективов 33 мм.
+            +b.row.row_flex
+                +b.specifications
+                    +e.P.title Технические характеристики
+                    +b.characteristics
+                        +b.table-name
+                            +e.P.name Увеличение микроскопа, крат 40s
+                            +e.P.name Визуальная насадка
+                            +e.P.name Угол наклона визуальной насадки, град
+                            +e.P.name Увеличение насадки
+                            +e.P.name Окуляры
+                            +e.P.name Револьверное устройство
+                            +e.P.name Тип коррекции объективов
+                            +e.P.name Объективы
+                            +e.P.name Предметный столик, мм
+                            +e.P.name Диапазон перемещения препарата, мм
+
+                        +b.table-value
+                            +e.P.value 1600 (20 - 2000* - опция)
+                            +e.P.value монокулярная
+                            +e.P.value 45
+                            +e.P.value 1
+                            +e.P.value 10/18; 16/15; (5/18*; 12,5/15*; 20/11* - опция)
+                            +e.P.value на 4 объектива
+                            +e.P.value ахроматы, рассчитаны на длину тубуса 160, парфокальная высота 33 мм
+                            +e.P.value 4x/0,1; 10x/0,25; 40x/0,65; 100x/1,25 ми
+                            +e.P.value 110х120
+                            +e.P.value 60х30
