@@ -1,0 +1,15 @@
+@import "variables";           // Переменные
+@import "mixins";              // Миксины
+@import "fonts";               // Шрифты
+@import "reset";               // Отступы
+<<<<<<< HEAD
+@import "grid";                // Сетка
+=======
+@import "grid";                // Сетка
+@import "catalog";             // Стили каталога
+@import "catalog_side_bar";    // Стили компонента side-bar
+@import "medical_equipment";   // Стили компонента "Медецинская техника в Пензе..."
+@import "sorting";             // Стили окна стортировки
+@import "pagination";          // Стили кнопок переключения страниц в каталоге
+@import "tonometr-page";       // Стили страницы тонометра
+>>>>>>> parent of 31587b2... some changes
