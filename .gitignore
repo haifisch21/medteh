@@ -5,3 +5,6 @@
 *.css
 *.config
 /node_modules/
+src/styles/_mixins.scss
+src/pug/pages/tonometr_page.pug
+build/css/style.css.map
