@@ -1,0 +1,85 @@
+include ../bemto/bemto.pug
+include ../components/_vars
+include ../components/_mixin
+
++base-page
+    +b.wrapper
+        +b.container
+            +b.row
+                +b.way
+                    +e.A(href='/build/index.html').link._main Главная
+                    +e.A(href='#').link._catalog Контакты
+            +b.row
+                +b.about-content
+                    +e.P.title О компании
+                    +e.P.description Мы рады приветствовать Вас на нашем сайте ЗАО «Медтехника» Пенза. В каталоге товаров Вы сможете найти и купить тонометры, ингаляторы, медицинскую мебель, инструменты и многое другое. В выборе товара Вам всегда помогут специалисты широкого профиля.
+            +b.row
+                +b.contact-block
+                    +b.contact-info
+                        +b.contact-map
+                            +e.IMG(src="/src/assets/img/map.jpg").img
+                        +b.dark-block
+                            +b.our-address
+                                +e.P.title наш адрес
+                                +e.P.subtitle Россия, 440018, г. Пенза, ул. Средняя, 9
+                            +b.work-time
+                                +e.P.title режим работы
+                                +b.working-grid
+                                    +b.working-days
+                                        +e.P.text пн - пт
+                                        +e.P.text сб
+                                        +e.P.text._light вс
+                                    +b.working-time
+                                        +e.P.text 08:30 - 18:00
+                                        +e.P.text 08:30 - 16:00
+                                        +e.P.text._light выходной день
+                        +b.way-to-us
+                            +b.public-transport
+                                +e.P.title Как до нас добраться
+                                +e.P.text Автобусы:
+                                    +e.SPAN.text-bold 18, 33, 54, 82с, 99
+                                +e.P.text Троллейбусы:
+                                    +e.SPAN.text-bold 1, 6, 4, 7
+                                +e.P.text Маршрутные такси:
+                                    +e.SPAN.text-bold 1т, 2а, 4, 6, 33, 63, 86
+                            +b.by-car
+                                +e.IMG(src="/src/assets/img/car.png").img
+                                +e.P.text Если Вы на автомобиле, то въезд на территорию ЗАО «Медтехника» с ул. Пушкина (рядом с остановкой «Детская больница»).
+                    +b.contact-tel
+                        +e.P.title контактные телефоны
+                        +b.tel-block
+                            +e.P.position Генеральный директор (приемная)
+                            +e.P.name Наумкин Валерий Викторович
+                            +b.tel-mail
+                                +e.P.tel +7 (8412) 68-29-51
+                                +e.P.email medteh58@yandex.ru
+                        +b.tel-block
+                            +e.P.position Заместитель генерального директора
+                            +e.P.name Лелявин Виктор Викторович
+                            +b.tel-mail
+                                +e.P.tel +7 (8412) 68-05-70
+                        +b.tel-block
+                            +e.P.position Начальник отдела метрологии
+                            +e.P.name Давыдова Татьяна Евгеньевна
+                            +b.tel-mail
+                                +e.P.tel +7(8412) 68-34-52
+                                +e.P.email penzametr@pnz.ru
+                        +b.tel-block
+                            +e.P.position Начальник производственного отдела
+                            +e.P.name Тузлаев Владимир Васильевич
+                            +b.tel-mail
+                                +e.P.tel +7(8412) 68-58-49
+                        +b.tel-block
+                            +e.P.position Главный бухгалтер
+                            +e.P.name Симакова Вера Андреевна
+                            +b.tel-mail
+                                +e.P.tel +7 (8412) 68-07-56
+                        +b.tel-block
+                            +e.P.position Отдел оптово-розничных продаж
+                            +b.tel-mail
+                                +e.P.tel +7 (8412) 68-02-11, 68-38-62
+                                +e.P.email._indent medopt58@yandex.ru
+                        +b.tel-block
+                            +e.P.position Отдел розничных продаж населению
+                            +b.tel-mail
+                                +e.P.tel +7 (8412) 68-43-70

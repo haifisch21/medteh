@@ -1,0 +1,202 @@
+.contact-block{
+  display: flex;
+  flex-direction: row;
+}
+.contact-info{
+  @include span(8);
+}
+.contact-tel{
+  @include span(4);
+}
+.dark-block{
+  background-color: $color-gray;
+}
+
+.contact-map{
+  padding-bottom: 2rem;
+  &__img{
+    width: 83rem;
+  }
+}
+
+.dark-block{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.our-address{
+  @include span(6);
+
+  &__title{
+    @include font(12px);
+    padding-top: 3rem;
+    padding-bottom: 2.9rem;
+    padding-left: $gutter;
+    color: $color-dark-grayish-red;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+  }
+
+  &__subtitle{
+    @include font(16px, 700);
+    color: $color-mostly-black;
+    padding-left: $gutter;
+    padding-bottom: 6.9rem;
+  }
+}
+.work-time{
+  @include span(6);
+
+  &__title{
+    @include font(12px);
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    color: $color-dark-grayish-red;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+  }
+}
+
+.working-grid{
+  display: flex;
+  flex-direction: row;
+}
+
+.working-days{
+  &__text{
+    @include font(14px);
+    color: $color-mostly-black;
+    padding-right: 6.5rem;
+    line-height: 24px;
+  }
+
+  &__text_light{
+    color: $color-dark-grayish-red;
+  }
+}
+
+.working-time{
+  &__text{
+    @include font(14px);
+    color: $color-mostly-black;
+    padding-right: 6.5rem;
+    line-height: 24px;
+  }
+
+  &__text_light{
+    color: $color-dark-grayish-red;
+  }
+}
+
+.way-to-us{
+  display: flex;
+  flex-direction: row;
+  background-color: $color-pearl-white;
+  margin-bottom: 6rem;
+}
+
+.public-transport{
+  @include span(6);
+
+  &__title{
+    @include font(12px);
+    color: $color-yellow-ocher;
+    padding-top: 3.1rem;
+    text-transform: uppercase;
+    padding-left: $gutter;
+    padding-bottom: 2.9rem;
+  }
+
+  &__text{
+    @include font(14px);
+    padding-left: $gutter;
+    color: $color-mostly-black;
+    line-height: 24px;
+
+    &:last-child{
+      padding-bottom: 3.8rem;
+    }
+  }
+
+  &__text-bold{
+    @include font(14px, 700);
+    padding-left: .5rem;
+    color: $color-mostly-black;
+  }
+}
+
+.by-car{
+  @include span(6);
+
+  &__img{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__text{
+    @include font(14px);
+    color: $color-mostly-black;
+    line-height: 24px;
+    width: 38rem;
+  }
+}
+
+.contact-tel{
+  padding-left: 3.4rem;
+  &__title{
+    @include font(12px);
+    padding-bottom: 3.7rem;
+    color: $color-dark-grayish-red;
+    text-transform: uppercase;
+  }
+}
+
+.tel-block{
+  padding-bottom: 3.5rem;
+
+  &__position{
+    @include font(14px);
+    line-height: 24px;
+    color: $color-mostly-black;
+  }
+
+  &__name{
+    @include font(14px);
+    line-height: 24px;
+    color: $color-dark-grayish-red;
+
+  }
+}
+
+.tel-mail{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-top: 1rem;
+
+  &__tel{
+    @include font(16px, 700);
+    color: $color-strong-blue;
+    padding-right: 2rem;
+  }
+
+  &__email{
+    @include font(14px);
+    color: $color-strong-blue;
+  }
+}
+
+
+.tel-block:nth-child(7) > .tel-mail{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tel-block:nth-child(7) .email{
+  padding-top: 2rem;
+}
+
+.tel-mail__email_indent{
+  padding-top: 1rem;
+}
