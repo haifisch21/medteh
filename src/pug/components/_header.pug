@@ -6,7 +6,7 @@
                     +e.UL.items
                         each item in navList
                             +e.LI.item
-                                +e.A(href="#").link=item
+                                +e.A(href=" " + item.link).link=item.page
                     +b.FORM.search
                         +e.BUTTON(type="submit").btn
                         +e.INPUT(type="text" placeholder="Поиск по сайту").area
