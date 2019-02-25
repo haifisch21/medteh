@@ -1,0 +1,29 @@
+include ../bemto/bemto.pug
+include _vars
+
+.wrapper.interesting-font
+    +b.container
+        +b.interesting
+            +e.H2.title Вас также может заинтересовать:
+            +b.interesting-grid
+                each item in listProduct
+                    +b.interesting-block
+                        +e.IMG(src="/src/assets/img/" + item.img).img
+                        +b.description-block
+                            +e.P.description=item.description
+                            +e.P.title
+                                +e.A(href=" " + item.link).link=item.title
+                            +e.P.subtitle=item.subtitle
+                        +b.pricing
+                            if item.oldPrice
+                                +e.P.old-price=item.oldPrice
+                                +e.P.price=item.price
+                            else
+                                +e.P.price=item.price
+                        +e.BUTTON(type='button').btn=item.button
+                        if item.new
+                            +e.P.new=item.new
+                        else if item.bestPrice
+                            +e.P.best-price=item.bestPrice
+                        else if item.hitSales
+                            +e.P.hit-sales=item.hitSales

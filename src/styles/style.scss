@@ -1,10 +1,10 @@
 @import "variables";           // Переменные
 @import "mixins";              // Миксины
 @import "fonts";               // Шрифты
+@import "head";                // Стили хэдера
+@import "foot";                // Стили футера
+@import "main";                // Главная
 @import "reset";               // Отступы
-<<<<<<< HEAD
-@import "grid";                // Сетка
-=======
 @import "grid";                // Сетка
 @import "catalog";             // Стили каталога
 @import "catalog_side_bar";    // Стили компонента side-bar
@@ -12,4 +12,6 @@
 @import "sorting";             // Стили окна стортировки
 @import "pagination";          // Стили кнопок переключения страниц в каталоге
 @import "tonometr-page";       // Стили страницы тонометра
->>>>>>> parent of 31587b2... some changes
+@import "button_back";         // Стили кнопки "назад"
+@import "gallery_hit_sails";   // Стили галереи "Хит продаж"
+@import "button_by";           // Стили кнопки "Купить"

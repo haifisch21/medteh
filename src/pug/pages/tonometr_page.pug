@@ -6,17 +6,58 @@ include ../components/_mixin
 +base-page
     +b.wrapper
         +b.container
-            +b.row
-                +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque cum dolorum excepturi iste nostrum perspiciatis quasi quos? Aliquid cum ea eius ex, ipsum iste laborum libero neque obcaecati quae soluta unde voluptate. A aut consequuntur et iure, magni officiis quae quaerat sunt totam ullam! Aut consectetur hic impedit, magnam nemo quas rerum saepe sunt velit. Ad consequuntur dignissimos dolor ducimus, enim explicabo facilis incidunt necessitatibus officia omnis quo sit tempora unde? Adipisci cum dolore dolorem incidunt quisquam recusandae repellendus reprehenderit sapiente velit voluptas? Architecto et eum inventore, laborum nihil nobis placeat quidem ratione rem veniam? Blanditiis consectetur distinctio earum enim esse eum facere, fugiat in inventore itaque laborum, mollitia necessitatibus nisi nobis numquam officiis omnis, qui reiciendis temporibus velit. Accusantium animi nesciunt placeat praesentium repudiandae? A ab minus molestias necessitatibus praesentium quia tempora. Aliquid animi aspernatur, assumenda consequatur dicta doloremque, error fugiat iure natus nisi nobis praesentium quisquam repudiandae!
+            +b.row.row_flex
+                +b.way
+                    +e.A(href='/build/index.html').link._pages Главная
+                    +e.A(href='/build/catalog.html').link._pages Каталог
+                    +e.A(href='#').link._pages Товары для дома
+                    +e.A(href='#').link._pages Тонометры
+                    +e.A(href='#').link._product Тонометры автоматические
+            include ../components/_button_back
+            +b.row.row_flex
+                +b.gallery-wrapper
+                    +b.product-gallery
+                        +b.gallery-wrap
+                            +b.img-block
+                                +e.IMG(src="/src/assets/img/tonometr_main.jpg").img._main
+                                include ../components/_gallery_hit_sails
+                            +b.img-mini-wrap
+                                +b.img-wrap
+                                    +e.IMG(src="/src/assets/img/tonometr_gallery_1.jpg").img
+                                +b.img-wrap
+                                    +e.IMG(src="/src/assets/img/tonometr_gallery_2.jpg").img
+                    +b.product-discruption
+                        +e.P.title Автоматический тонометр для людей с пониженным зрением B.Well WA-77 «Talking»
+                        +e.P.subcategory Подкатегория:
+                            +e.SPAN.subcategory._colored Тонометры Автоматические
+                        +e.P.info ДАННЫЙ ТОВАР ИМЕЕТ СЕРТИФИКАТ СООТВЕТСТВИЯ И РЕГИСТРАЦИОННОЕ УДОСТОВЕРЕНИЕ
+                        +b.pricing._product
+                            +e.P.old-price._product 3870 &#8381;
+                            +e.price._product 3870 &#8381;
+                        include ../components/_button_by
+            +b.row.row_flex
+                +b.product-info
+                    +e.P.title Описание товара
+                    +e.P.info Микроскоп предназначен для наблюдения и морфологических исследований препаратов в проходящем свете по методу светлого поля. МИКРОМЕД Р-1 может быть использован при учебных и лабораторных работах в различных областях медицины для решения широкого круга задач, в ветеринарии. На микроскопе можно изучать окрашенные и неокрашенные биологические объекты в виде мазков и срезов.
+                    +e.P.info МИКРОМЕД Р-1 обеспечивает возможность вывода изображения в режиме реального времени на экран ПК с помощью видеоокуляра (в комплект не входит) для количественного анализа структур исследуемых объектов.
+                    +e.P.info Сочетая в себе ахроматическую оптику и низкую цену, микроскоп МИКРОМЕД Р-1 незаменим как для целей обучения в высших медицинских и биологических учреждениях, так и для несложной рутинной работы в лаборатории. Широко используется в ветеринарии.
+                    +e.P.info Микроскоп рассчитан на длину тубуса 160 мм, объективы стандарта RMS, парфокальная высота объективов 33 мм.
+            +b.row.row_flex
+                +b.specifications
+                    +e.P.title Технические характеристики
+                    +b.characteristics
+                        +b.table-name
+                            +e.P.name Увеличение микроскопа, крат 40s
+                            +e.P.name Визуальная насадка
+                            +e.P.name Угол наклона визуальной насадки, град
+                            +e.P.name Увеличение насадки
+                            +e.P.name Окуляры
+                            +e.P.name Револьверное устройство
+                            +e.P.name Тип коррекции объективов
+                            +e.P.name Объективы
+                            +e.P.name Предметный столик, мм
+                            +e.P.name Диапазон перемещения препарата, мм
 
-<<<<<<< HEAD
-        .container
-            .row.row_flex
-                - var n = 0;
-                    while n < 14
-                        .item= n++
-                            span lorem
-=======
                         +b.table-value
                             +e.P.value 1600 (20 - 2000* - опция)
                             +e.P.value монокулярная
@@ -27,13 +68,52 @@ include ../components/_mixin
                             +e.P.value ахроматы, рассчитаны на длину тубуса 160, парфокальная высота 33 мм
                             +e.P.value 4x/0,1; 10x/0,25; 40x/0,65; 100x/1,25 ми
                             +e.P.value 110х120
-<<<<<<< HEAD
-<<<<<<< HEAD
                             +e.P.value 60х30
->>>>>>> parent of aebe5f0... Some changes
-=======
-                            +e.P.value 60х30
->>>>>>> parent of aebe5f0... Some changes
-=======
-                            +e.P.value 60х30
->>>>>>> parent of aebe5f0... Some changes
+            +b.row.row_flex
+                +b.benefits
+                    +e.P.title Преимущества
+                        +e.UL.lists
+                            +e.LI.list Абсолютно безопасные для использования в присутствии людей
+                            +e.LI.list Обладают обеззараживающим, очищающим и дезодорирующим эффектом
+                            +e.LI.list Обеспечивают постоянное поддержание асептических условий помещения
+                            +e.LI.list Используются специальные сменные безозоновые бактерицидные лампы фирм Philips и Lighttech
+                            +e.LI.list Контроль работы бактерицидных ламп осуществляется световыми индикаторами
+                            +e.LI.list Ресурс непрерывной работы бактерицидных ламп - 9000 часов
+                            +e.LI.list Цифровой четырехразрядный счетчик часов фиксирует отработанное время у/ф ламп
+            +b.row.row_flex
+                +b.completeness
+                    +e.P.title Комплектность
+                        +e.UL.lists
+                            +e.LI.list
+                                +e.SPAN.number 1.
+                                +e.P.text Штатив (со встроенным в основание осветителем  с лампой 220В, 20Вт или галогенной лампой и источником питания) - 1
+                            +e.LI.list
+                                +e.SPAN.number 2.
+                                +e.P.text Револьвер на 4 позиции объективов - 1 - установлен на штативе
+                            +e.LI.list
+                                +e.SPAN.number 3.
+                                +e.P.text Насадка монокулярная поворотная на 360º с наклоном на 45º - 1
+                            +e.LI.list
+                                +e.SPAN.number 4.
+                                +e.P.text Конденсор Аббе центрируемый светлого поля А 1,25 - 1 - установлен на штативе
+                            +e.LI.list
+                                +e.SPAN.number 5.
+                                +e.P.text Столик прямоугольный (110х120мм) координатный (60х30мм) - 1 - установлен на штативе
+                            +e.LI.list
+                                +e.SPAN.number 6.
+                                +e.P.text Объектив-ахромат 4х/0,1
+                                    +e.SPAN.indent 160/0,17 - 1
+                            +e.LI.list
+                                +e.SPAN.number 7.
+                                +e.P.text Объектив-ахромат 10х/0,25
+                                    +e.SPAN.indent 160/0,17 - 1
+            +b.row.row_flex
+                +b.additionally
+                    +e.P.title Дополнительно
+                        +e.P.description Скачать документы для ознакомления:
+                        +e.P.link
+                            +e.A(href="#" download).download Спецификации.doc<br>
+                        +e.P.link
+                            +e.A(href="#" download).download Техническая документация.pdf
+
+        include ../components/_may_be_interisting

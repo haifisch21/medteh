@@ -1,0 +1,17 @@
+.info-block{
+  padding-top: 4rem;
+  margin-bottom: 5.5rem;
+  &__title{
+    @include font(36px);
+    color: $color-mostly-black-dark;
+    text-align: center;
+  }
+
+  &__subtitle{
+    @include font(16px, 400, 24px);
+    color: $color-mostly-black;
+    text-align: center;
+    width: 120rem;
+    padding-top: 2.5rem;
+  }
+}

@@ -14,5 +14,10 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/haifisch21/medteh/issues"
+  },
+  "homepage": "https://github.com/haifisch21/medteh#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "swiper": "^4.4.6"
   }
 }

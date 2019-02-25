@@ -2,6 +2,13 @@ html {
   font-size: 62.5%;
   position: relative;
   height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -16,7 +23,8 @@ h3,
 h4,
 h5,
 h6,
-p{
+p,
+button{
   margin: 0;
   padding: 0;
 }
